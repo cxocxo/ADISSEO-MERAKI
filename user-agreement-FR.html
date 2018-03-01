@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=UTF-8">
+  <title>Wifi Guest ADISSEO</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="main.css" type="text/css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <div id="content">
+    <div id="container">
+      <div class="header">
+			<div id="icon_cell">
+			<img src="logo.jpg" alt="Adisseo">
+			</div>
+      </div>
+
+      <div class="error $MERAKI:HIDDEN_UNLESS_NOTICE_MESSAGES$">
+        <p>$MERAKI:NOTICE_MESSAGES$</p>
+      </div>
+
+      <div id="auth">
+        <div id="left_col">
+          <h1>Bienvenue sur le wifi Guest d'ADISSEO</h1>
+          <p>Conditions d'utilisation</p>
+          <p>En cliquant sur le bouton "Se Connecter" vous acceptez les conditions d'utilisations et le traitement des données collectées par ADISSEO</p>
+        </div>
+
+        <div id="right_col">
+          <div class="login-error $MERAKI:HIDDEN_UNLESS_ERROR_MESSAGES$">
+            <p>$MERAKI:WARNING_IMAGE$$MERAKI:ERROR_MESSAGES$</p>
+          </div>
+          <div id="signin_form" class="formarea">
+            $MERAKI:MODERN_AUTH_ALREADY_HAVE_ACCOUNT_SIGN_IN_HERE_FORM$
+            <div class="form_links $MERAKI:HIDDEN_UNLESS_CAN_CREATE_ACCOUNT$">
+              <a class="toggle_link" id="create_account_link" href="#">Créer un compte</a>
+            </div>
+          </div>
+
+          <div id="account" class="form_links $MERAKI:HIDDEN_UNLESS_CAN_CREATE_ACCOUNT$">
+            <div id="create_account_form" class="formarea $MERAKI:HIDDEN_UNLESS_CAN_CREATE_ACCOUNT$">
+              <h2>$MERAKI:AUTH_CREATE_ACCOUNT_TEXT$</h2>
+              $MERAKI:MODERN_AUTH_CREATE_ACCOUNT_FORM$
+              <div class="form_links">
+                <a class="toggle_link" id="signin_link" href="#">$MERAKI:AUTH_SIGN_IN_TITLE$</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <h3>POWERED BY</h3>
+    $MERAKI:CISCO_MERAKI_SMALL$
+  </div>
+
+$MERAKI:TOGGLE_SIGN_ON_JS$
+$MERAKI:MERAKI_JS$
+</body>
+</html>
